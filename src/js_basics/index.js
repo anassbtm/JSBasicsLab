@@ -49,14 +49,11 @@ return reversed;
 };
 
 export const isPalindrome = (str) => {
-  // str will be an string
-  // Return true if it is a palindrome and false otherwise.
-  // It should be case insensitive and not consider space or punctuation.
-  var len = Math.floor(str.length / 2);
-  for (var i = 0; i < len; i++)
-    if (str[i] !== str[str.length - i - 1])
-      return false;
+
+
+  if(str.toLowerCase() === reverseString(str.toLowerCase()))
   return true;
+  else return false;
 };
 
 export const nestedSum = (arr) => {
